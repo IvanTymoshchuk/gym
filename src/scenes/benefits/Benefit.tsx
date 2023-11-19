@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
@@ -8,9 +9,17 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+const childVariant = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 },
+};
+
 const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
   return (
-    <div className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center">
+    <motion.div
+      className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+      variants={childVariant}
+    >
       <div className="mb-4 flex justify-center">
         <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
           {icon}
@@ -20,12 +29,12 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
       <p className="my-3">{description}</p>
       <AnchorLink
         className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-        onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-        href={`#${SelectedPage.ContactUs}`}
+        onClick={() => setSelectedPage(SelectedPage.Benefits)}
+        href={`#${SelectedPage.Benefits}`}
       >
         Learn More
       </AnchorLink>
-    </div>
+    </motion.div>
   );
 };
 

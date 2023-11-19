@@ -43,10 +43,9 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             <p className="mt-8 text-sm">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-              mollitia sequi sapiente repellat ullam velit nobis, quae error
-              sint cupiditate non veniam. Excepturi odit, repellendus ullam
-              aliquid tempore nulla assumenda.
+              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
+              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Body Now.
             </p>
           </motion.div>
           {/* Actions */}
