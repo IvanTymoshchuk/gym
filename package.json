@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-      "build": "vite build --base=/gym/",
+    "build": "vite build --base=/gym/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,7 +14,8 @@
     "framer-motion": "^10.16.5",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",

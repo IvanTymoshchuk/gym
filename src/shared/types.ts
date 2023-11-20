@@ -10,3 +10,9 @@ export interface BenefitType {
   title: string;
   description: string;
 }
+
+export interface ClassType {
+  name: string;
+  description?: string; // знак запитання означає що не обов'язковий 
+  image: string;
+}
